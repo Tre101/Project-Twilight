@@ -11,6 +11,7 @@ var health = 1
 var Effects = null
 onready var Bullet = load("res://Enemy/Bullet.tscn")
 onready var Explosion = load("res://Effects/Explosion.tscn")
+onready var Enemy = load("res://Enemy/Enemy.tscn")
 
 func _ready():
 	initial_position.x = -100
@@ -22,10 +23,25 @@ func _physics_process(_delta):
 	position.y = initial_position.y + sin(position.x/20)*wobble
 	if position.x >= Global.VP.x + 100:
 		queue_free()
+	position.x = wrapf(position.x, 0, Global.VP.x)
+	position.y = wrapf(position.y, 0, Global.VP.y)
 
 func damage(d):
 	health -= d
+	var enemy_respawnRate = 2
 	if health <= 0:
+		var Enemy_Container = get_node_or_null("/root/Level_1/Enemy_Container")
+		if Enemy_Container != null:
+			if Global.currentEnemies >= 10:
+				pass
+			else:
+				for n in enemy_respawnRate:
+					Global.currentEnemies += 1
+					if Global.currentEnemies >= 10:
+						pass
+					else:
+						var enemy = Enemy.instance()
+						Enemy_Container.call_deferred("add_child", enemy)
 		Global.update_score(500)
 		Effects = get_node_or_null("/root/Level_1/Effects")
 		if Effects != null:
