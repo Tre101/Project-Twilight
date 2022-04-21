@@ -55,6 +55,8 @@ func update_score(s):
 	var hud = get_node_or_null("/root/Level_1/UI/HUD")
 	if hud != null:
 		hud.update_score()
+	if score >= 7000:
+		get_tree().change_scene("res://UI/End_Game.tscn")
 
 func update_lives(l):
 	lives += l
