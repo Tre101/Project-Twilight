@@ -1,27 +1,51 @@
-# Project 02- 2D Arcade Space Shooter
+# Project Name
+MSCH-C220 Game Jam, April 2022
 
-Exercise for MSCH-C220, Febuary 12, 2022
-The creation of a 2D Arcade Space Shooter
+## Theme
+Literally Time Crunching, you have to Kill the enemies before the time runs out. If the time were to run out then you lose and have to restart.
 
-## To play
+## Game Play
+Kill Every Enemy on the Map before the time runs out 
 
-Use the WAD buttons and space bar on your keyboard to blow up asteroids and an enemey ship.
+W - Forward
 
+S - Down
+
+A - Left
+
+D - Right
+
+Space - Shoot
+
+## Impediments
+
+In Game Errors
+
+Problems with Repositories
 
 ## Implementation
 
-Built using Godot 3.4.2
+Spawing Enemies Aspect
+
+Time Crunching (Time Count Down)
+
 
 ## References
- * [Asteroids created by, Yiannis Charalambous]
- * [Space Shooter Redux Pack, provided by kenney.nl](https://kenney.nl/assets/space-shooter-redux)
- *[Common Fight Music, provided by Patrick De Arteaga](https://patrickdearteaga.com/chiptune-8-bit-retro/)
- 
+
+https://kenney.nl/assets/space-shooter-redux
+
+https://opengameart.org/content/explosion
 
 ## Future Development
 
-Typeface changes, Shaders, Camera Tracking,
+None
 
-## Created by 
+# Created by: Group Name
 
-Dominic Bennett
+Jared- Lead Programmer
+
+Liam- Co-Programme
+
+Tre- Lead Designer
+
+Dominic- Co-Designer/Project Manager
