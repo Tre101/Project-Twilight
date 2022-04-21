@@ -3,7 +3,7 @@ extends Node
 var VP = Vector2.ZERO
 
 var score = 0
-var time = 60
+var time = 20
 var lives = 5
 var level = -1
 var currentEnemies = 1
@@ -46,7 +46,7 @@ func _resize():
 func reset():
 	get_tree().paused = false
 	score = 0
-	time = 60
+	time = 20
 	lives = 5
 	
 
