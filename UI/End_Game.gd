@@ -8,6 +8,7 @@ func _ready():
 func _on_Play_pressed():
 	Global.reset()
 	var _scene = get_tree().change_scene("res://Level1.tscn")
+	Global.currentEnemies = 1
 
 
 func _on_Quit_pressed():
